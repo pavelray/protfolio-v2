@@ -8,7 +8,8 @@ export default function Header() {
       <div className="ui container">
         <div className="header-block">
           <h1 className="header-text__main">
-              Hi, I'm John Doe <i className="icon smile outline"></i>
+              Hi , 
+              I'm <span className="header-text__main--name">John Doe</span>
           </h1>
           <h2 className="header-text__sub">
               Sample Text

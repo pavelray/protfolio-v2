@@ -8,12 +8,47 @@
 }
 
 .header-text__main{
-    font-size: 3rem;
-    letter-spacing: .5rem;
-    
+    font-size: 3.5rem;
+    letter-spacing: .3rem;
+    color: #fff;
+    animation: moveInUp 1s ease-in-out;
 }
 
 .header-text__sub{
-    font-size: 2rem;
-    letter-spacing: .5rem;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    color: #fff;
+    animation: moveInBottom .5s ease .75s; 
+    animation-fill-mode: backwards; 
 }
+
+.header-text__main--name{
+    color: #ffa500;
+}
+
+    
+@keyframes moveInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(-10rem); 
+    }
+    80% {
+      transform: translateY(1rem); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    } 
+}
+
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    } 
+}
+  
