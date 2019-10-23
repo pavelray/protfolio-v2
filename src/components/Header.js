@@ -4,7 +4,7 @@ import '../styles/Header.css';
 
 export default function Header() {
   return (
-   <section>
+   <section className="section_wave">
       <div className="ui container">
         <div className="header-block">
           <h1 className="header-text__main">
@@ -15,10 +15,12 @@ export default function Header() {
               Sample Text
           </h2>
         </div>
+     
       <div className="wave wave1"></div>
       <div className="wave wave2"></div>
       <div className="wave wave3"></div>
       <div className="wave wave4"></div>
+      
       </div>
    </section>
   )

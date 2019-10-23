@@ -1,0 +1,31 @@
+.arrow_content{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.arrow_content span{
+    margin: 0 0;
+    display: block;
+    align-content: center;
+    text-align: center;
+    font-size: 2rem;
+    margin-top:5rem;
+    animation: moveInBottom .5s ease .75s; 
+    animation-fill-mode: backwards; 
+}
+
+.arrow_content span:hover{
+    cursor: pointer;
+}
+
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    } 
+}
