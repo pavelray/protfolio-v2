@@ -1,0 +1,57 @@
+.header_block{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.header_primary{
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: .3rem;
+    font-family: 'Kalam', cursive;
+}
+
+.header_primary-sub{
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: .3rem;
+    margin-bottom: 5rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.description{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+.emoji_span{
+    display: block;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+
+.social-block{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 3rem;
+    display: flex;
+}
+
+.socal_icon i{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin: 0rem 3.5rem;
+    display: inline;
+    vertical-align: middle;
+    transition: .4s ease-out;
+}
+
+.socal_icon i:hover{
+    background-color: rgb(10, 10, 10);
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+    
+}

@@ -1,10 +1,15 @@
 .footer{
     width: 100%;
-    margin-top: 15rem;
-    margin-bottom: 15rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 
 .footer_content{
     text-align: center;
     justify-content: center;
+}
+
+.footer_content h2{
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
 }

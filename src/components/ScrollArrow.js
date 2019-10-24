@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link} from "react-scroll";
 
-import '../styles/ScrollArrow.css';
-
 
 export default function ScrollArrow() {
   return (

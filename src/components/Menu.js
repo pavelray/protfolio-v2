@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import '../styles/Menu.css';
-
 const scrollToTop = () => {
     scroll.scrollToTop();
 };
