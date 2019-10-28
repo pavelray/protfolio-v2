@@ -10,10 +10,12 @@ export default function Contact() {
           <span className="emoji_span" role="img">👇</span>
         </h3>
         <div className=" ui container social-block">
-            <span className="socal_icon"><i className="instagram icon"></i></span>
-            <span className="socal_icon"><i className="github icon"></i></span>
-            <span className="socal_icon"><i className="linkedin icon"></i></span>
-            <span className="socal_icon"><i className="facebook icon"></i></span>
+            <div className="social-block-container">
+              <i className="instagram icon"></i>
+              <i className="github icon"></i>
+              <i className="linkedin icon"></i>
+              <i className="facebook icon"></i>
+            </div>
         </div>
         
       </div>

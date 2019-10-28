@@ -30,28 +30,13 @@
     font-size: 2rem;
 }
 
-.social-block{
-    text-align: center;
-    vertical-align: middle;
-    font-size: 3rem;
-    display: flex;
-}
 
-.socal_icon i{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    margin: 0rem 3.5rem;
-    display: inline;
-    vertical-align: middle;
+.social-block i{
+    font-size: 4rem;
     transition: .4s ease-out;
 }
 
-.socal_icon i:hover{
-    background-color: rgb(10, 10, 10);
-    border-radius: 100%;
-    color: white;
+.social-block i:hover{
+    color: #FFD700;
     cursor: pointer;
-    
 }
