@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { personalizedIntroduction } from '@/ai/flows/personalized-introduction';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -36,26 +35,26 @@ export function Hero() {
 
   return (
     <section id="hero" className="bg-background">
-      <div className="container grid min-h-[calc(100vh-4rem)] grid-cols-1 items-center gap-12 py-12 md:grid-cols-2 lg:py-20">
-        <div className="flex flex-col items-start">
+      <div className="container grid min-h-[calc(100vh-4rem)] grid-cols-1 items-center justify-items-center gap-12 py-12 text-center lg:py-20">
+        <div className="flex flex-col items-center">
           <h1 className="font-headline text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
             Pavel Ray
           </h1>
           <p className="mt-2 text-xl text-primary md:text-2xl">
             Full Stack Developer
           </p>
-          <div className="mt-6 h-24">
+          <div className="mt-6 h-24 max-w-2xl">
             {isLoading ? (
               <div className="space-y-2">
                 <Skeleton className="h-4 w-full" />
                 <Skeleton className="h-4 w-full" />
-                <Skeleton className="h-4 w-3/4" />
+                <Skeleton className="h-4 w-3/4 mx-auto" />
               </div>
             ) : (
               <p className="text-base text-muted-foreground md:text-lg">{intro}</p>
             )}
           </div>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button size="lg" asChild>
               <Link href="#projects">
                 View My Work <ArrowRight className="ml-2 h-4 w-4" />
@@ -72,16 +71,6 @@ export function Hero() {
               </a>
             </Button>
           </div>
-        </div>
-        <div className="flex items-center justify-center">
-           <Image
-            src="https://placehold.co/500x500.png"
-            alt="Pavel Ray's portrait"
-            width={500}
-            height={500}
-            className="rounded-full shadow-2xl"
-            data-ai-hint="developer portrait"
-          />
         </div>
       </div>
     </section>
