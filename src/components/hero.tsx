@@ -6,12 +6,13 @@ import Image from 'next/image';
 import { personalizedIntroduction } from '@/ai/flows/personalized-introduction';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Linkedin, ArrowRight } from 'lucide-react';
+import { Linkedin, Github, ArrowRight } from 'lucide-react';
 
 export function Hero() {
   const [intro, setIntro] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const linkedInProfileUrl = 'https://www.linkedin.com/in/pavelray/';
+  const githubProfileUrl = 'https://github.com/pavelray';
 
   useEffect(() => {
     async function getIntro() {
@@ -41,7 +42,7 @@ export function Hero() {
             Pavel Ray
           </h1>
           <p className="mt-2 text-xl text-primary md:text-2xl">
-            Full Stack Developer & Freelancer
+            Full Stack Developer
           </p>
           <div className="mt-6 h-24">
             {isLoading ? (
@@ -63,6 +64,11 @@ export function Hero() {
             <Button size="lg" variant="outline" asChild>
               <a href={linkedInProfileUrl} target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <a href={githubProfileUrl} target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-4 w-4" /> GitHub
               </a>
             </Button>
           </div>

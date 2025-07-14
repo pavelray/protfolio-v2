@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Award, Briefcase, Users } from 'lucide-react';
+import { Award, Code, Users } from 'lucide-react';
 
 const features = [
   {
@@ -8,9 +8,9 @@ const features = [
     description: 'Developing high-quality, scalable, and maintainable web applications for a diverse range of clients.',
   },
   {
-    icon: <Briefcase className="h-8 w-8 text-primary" />,
-    title: 'Freelance Specialist',
-    description: 'Partnering with businesses to bring their ideas to life, from initial concept to final deployment.',
+    icon: <Code className="h-8 w-8 text-primary" />,
+    title: 'Full-Stack Expertise',
+    description: 'Proficient in both front-end and back-end technologies to deliver complete and seamless solutions.',
   },
   {
     icon: <Users className="h-8 w-8 text-primary" />,
@@ -28,7 +28,7 @@ export function About() {
             A Passionate Developer Crafting Digital Experiences
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            I'm a seasoned Full Stack Developer with over a decade of experience building robust and elegant web solutions. As a freelancer, I thrive on turning complex problems into simple, beautiful, and intuitive designs that exceed client expectations.
+            I'm a seasoned Full Stack Developer with over a decade of experience building robust and elegant web solutions. I thrive on turning complex problems into simple, beautiful, and intuitive designs that exceed client expectations.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
