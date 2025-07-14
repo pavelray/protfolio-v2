@@ -54,7 +54,7 @@ export function Hero() {
               <p className="text-base text-muted-foreground md:text-lg">{intro}</p>
             )}
           </div>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <div className="mt-16 flex flex-wrap justify-center gap-4">
             <Button size="lg" asChild>
               <Link href="#projects">
                 View My Work <ArrowRight className="ml-2 h-4 w-4" />
